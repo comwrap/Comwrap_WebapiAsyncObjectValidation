@@ -1,0 +1,20 @@
+{
+  "name": "comwrap/module-webapi-async-object-validation",
+  "version": "0.1.0",
+  "description": "Increase Bulk API performance, using direct entity publishing as array without creating objects for validation",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "^103"
+  },
+  "license": [
+    "Proprietary"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Comwrap\\WebapiAsyncObjectValidation\\": ""
+    }
+  }
+}
