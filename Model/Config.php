@@ -46,9 +46,6 @@ class Config
      */
     public function isBulkApiRequest(): bool
     {
-        if (preg_match(self::BULK_PROCESSOR_PATH_REGEXP, $this->request->getPathInfo()) === 1) {
-            return true;
-        }
-        return false;
+        return (bool)preg_match(self::BULK_PROCESSOR_PATH_REGEXP, $this->request->getPathInfo());
     }
 }
