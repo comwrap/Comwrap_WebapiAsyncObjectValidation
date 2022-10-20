@@ -9,4 +9,9 @@
         <plugin name="comwrapWebapiAsyncObjectValidationPluginMagentoFrameworkWebapiServiceInputProcessor"
                 type="Comwrap\WebapiAsyncObjectValidation\Plugin\Magento\Framework\Webapi\ServiceInputProcessor"/>
     </type>
+    <type name="Magento\AsynchronousOperations\Model\BulkManagement">
+        <arguments>
+            <argument name="entityManager" xsi:type="object">Comwrap\WebapiAsyncObjectValidation\Magento\Framework\EntityManager\EntityManager</argument>
+        </arguments>
+    </type>
 </config>
